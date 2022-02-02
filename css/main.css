@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+* {
+    font-size: 16px;
+    font-family:"Poppins";
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 105px; /* height of sticky header */
+    scroll-snap-type: y mandatory;
+}
+body{
+    margin:0;
+    padding: 0;
+    background: rgb(241, 179, 150);
+    height: auto;
+    position: relative;
+    overflow-y: auto;
+}
+h2 {
+    position: static;
+    left: 38%;
+    height: 76px;
+    padding-top: 0px;
+    overflow: hidden;
+    font-size: 6em;
+    margin-top: -30px;
+    color: rgb(241, 179, 150);
+}
+div.col-6 h5 {
+    color: white;
+}
+ul.list-unstyled li a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: lightslategrey;
+}
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: rgb(241, 179, 150);
+    border-color: rgb(241, 179, 150);
+}
+.aside {
+    display: none;
+}
+.ilk {
+    text-align: start;
+}
+.son {
+    text-align: end;
+}
+.cizgi {
+    top: 94px!important;
+    z-index: 1;
+}
+.yazi {
+    scroll-snap-align: start;
+}
+@media  screen and (min-width:768px) {
+    h2 {
+        position: static;
+        left: 38%;
+        height: 137px;
+        padding-top: 0px;
+        overflow: hidden;
+        font-size: 12em;
+        margin-top: -40px;
+        color: rgb(241, 179, 150);
+    } 
+}
+@media  screen and (min-width:992px) {
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 72px; /* height of sticky header */
+        scroll-snap-type: y mandatory;
+    }
+    h2 {
+        position: static;
+        left: 38%;
+        height: 196px;
+        padding-top: 0px;
+        overflow: hidden;
+        font-size: 16em;
+        margin-top: -50px;
+        color: rgb(241, 179, 150);
+    } 
+    .aside {
+        display: block;
+    }
+    .ilk {
+        text-align: center;
+    }
+    .son {
+        text-align: center;
+    }
+    .ayrac {
+        border-right: 1px solid #21252940;
+    }
+    .cizgi {
+        top: 56px!important;
+        z-index: 1;
+    }
+}
