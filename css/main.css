@@ -26,6 +26,16 @@ h2 {
     margin-top: -30px;
     color: rgb(241, 179, 150);
 }
+h3.Jumbo {
+    position: static;
+    left: 38%;
+    height: 60px;
+    padding-top: 0px;
+    overflow: hidden;
+    font-size: 4em;
+    margin-top: -10px;
+    color: rgb(241, 179, 150);
+}
 div.col-6 h5 {
     color: white;
 }
@@ -55,6 +65,28 @@ ul.list-unstyled li a, a:hover, a:focus, a:active {
 .yazi {
     scroll-snap-align: start;
 }
+@media  screen and (min-width:572px) {
+    h2 {
+        position: static;
+        left: 38%;
+        height: 137px;
+        padding-top: 0px;
+        overflow: hidden;
+        font-size: 12em;
+        margin-top: -40px;
+        color: rgb(241, 179, 150);
+    } 
+    h3.Jumbo {
+        position: static;
+        left: 38%;
+        height: 90px;
+        padding-top: 0px;
+        overflow: hidden;
+        font-size: 6em;
+        margin-top: -15px;
+        color: rgb(241, 179, 150);
+    }
+}
 @media  screen and (min-width:768px) {
     h2 {
         position: static;
@@ -66,6 +98,16 @@ ul.list-unstyled li a, a:hover, a:focus, a:active {
         margin-top: -40px;
         color: rgb(241, 179, 150);
     } 
+    h3.Jumbo {
+        position: static;
+        left: 38%;
+        height: 105px;
+        padding-top: 0px;
+        overflow: hidden;
+        font-size: 7em;
+        margin-top: -15px;
+        color: rgb(241, 179, 150);
+    }
 }
 @media  screen and (min-width:992px) {
     html {
@@ -81,6 +123,16 @@ ul.list-unstyled li a, a:hover, a:focus, a:active {
         overflow: hidden;
         font-size: 16em;
         margin-top: -50px;
+        color: rgb(241, 179, 150);
+    }
+    h3.Jumbo {
+        position: static;
+        left: 38%;
+        height: 146px;
+        padding-top: 0px;
+        overflow: hidden;
+        font-size: 10em;
+        margin-top: -15px;
         color: rgb(241, 179, 150);
     } 
     .aside {
