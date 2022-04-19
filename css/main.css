@@ -3,6 +3,32 @@
     font-size: 16px;
     font-family:"Poppins";
 }
+:root {
+    --primary-bg-color: #fff;
+    --secondary-bg-color: #fff;
+    --primary-text-color: #666;
+    --secondary-text-color: #999;
+}
+
+body.active {
+    --primary-bg-color: #121212;
+    --secondary-bg-color: #333;
+    --primary-text-color: #fff;
+    --secondary-text-color: #eee;
+}
+
+#theme-toggler {
+    position: fixed;
+    top: 15px;
+    right: 25px;
+    padding: 15px 20px;
+    font-size: 20px;
+    background: var(--secondary-bg-color);
+    color: var(--primary-text-color);
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+  }
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 105px; /* height of sticky header */
@@ -12,9 +38,18 @@ body{
     margin:0;
     padding: 0;
     background: rgb(241, 179, 150);
+    color: var(--primary-text-color);
     height: auto;
     position: relative;
     overflow-y: auto;
+}
+.content{
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+.content-top{
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
 }
 h2 {
     position: static;
@@ -42,6 +77,10 @@ div.col-6 h5 {
 ul.list-unstyled li a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: lightslategrey;
+}
+.list-group-item{
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
 }
 .list-group-item.active {
     z-index: 2;
@@ -137,6 +176,7 @@ ul.list-unstyled li a, a:hover, a:focus, a:active {
     } 
     .aside {
         display: block;
+        background-color: var(--primary-bg-color);
     }
     .ilk {
         text-align: center;
