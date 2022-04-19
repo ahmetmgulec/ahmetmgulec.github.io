@@ -20,7 +20,7 @@ body.active {
 #theme-toggler {
     position: fixed;
     top: 5px;
-    right: 15px;
+    right: 40px;
     padding: 10px 15px;
     font-size: 15px;
     background: var(--secondary-bg-color);
@@ -34,7 +34,7 @@ body.active {
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 105px; /* height of sticky header */
-    scroll-snap-type: y mandatory;
+    /*scroll-snap-type: y mandatory;*/
 }
 body{
     margin:0;
@@ -112,7 +112,7 @@ ul.list-unstyled li a, a:hover, a:focus, a:active {
     z-index: 1;
 }
 .yazi {
-    scroll-snap-align: start;
+    scroll-snap-align: none; /* for snapping, do "start" */
 }
 @media  screen and (min-width:572px) {
     h2 {
@@ -138,9 +138,9 @@ ul.list-unstyled li a, a:hover, a:focus, a:active {
     #theme-toggler {
         position: fixed;
         top: 5px;
-        right: 10px;
-        padding: 12px 18px;
-        font-size: 18px;
+        right: 40px;
+        padding: 10px 15px;
+        font-size: 15px;
         background: var(--secondary-bg-color);
         color: var(--primary-text-color);
         cursor: pointer;
@@ -193,9 +193,9 @@ ul.list-unstyled li a, a:hover, a:focus, a:active {
     #theme-toggler {
         position: fixed;
         top: 5px;
-        right: 5px;
+        right: 10px;
         padding: 12px 18px;
-        font-size: 25px;
+        font-size: 20px;
         background: var(--secondary-bg-color);
         color: var(--primary-text-color);
         cursor: pointer;
