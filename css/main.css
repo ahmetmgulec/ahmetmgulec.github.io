@@ -26,7 +26,7 @@ body.active {
     background: var(--secondary-bg-color);
     color: var(--primary-text-color);
     cursor: pointer;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     z-index: 1021;
 }
@@ -83,6 +83,7 @@ ul.list-unstyled li a, a:hover, a:focus, a:active {
 .list-group-item{
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
+    border-bottom-color: var(--primary-text-color);
 }
 .list-group-item.active {
     z-index: 2;
@@ -108,8 +109,9 @@ ul.list-unstyled li a, a:hover, a:focus, a:active {
     text-align: end;
 }
 .cizgi {
-    top: 94px!important;
-    z-index: 1;
+    top: 95px!important;
+    z-index: 9999;
+    background-color: var(--secondary-text-color);
 }
 .yazi {
     scroll-snap-align: none; /* for snapping, do "start" */
@@ -118,10 +120,10 @@ ul.list-unstyled li a, a:hover, a:focus, a:active {
     h2 {
         position: static;
         left: 38%;
-        height: 137px;
+        height: 117px;
         padding-top: 0px;
         overflow: hidden;
-        font-size: 12em;
+        font-size: 9em;
         margin-top: -40px;
         color: rgb(241, 179, 150);
     } 
@@ -144,7 +146,7 @@ ul.list-unstyled li a, a:hover, a:focus, a:active {
         background: var(--secondary-bg-color);
         color: var(--primary-text-color);
         cursor: pointer;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
         z-index: 1021;
     }
@@ -153,7 +155,7 @@ ul.list-unstyled li a, a:hover, a:focus, a:active {
     h2 {
         position: static;
         left: 38%;
-        height: 137px;
+        height: 157px;
         padding-top: 0px;
         overflow: hidden;
         font-size: 12em;
@@ -179,7 +181,7 @@ ul.list-unstyled li a, a:hover, a:focus, a:active {
         background: var(--secondary-bg-color);
         color: var(--primary-text-color);
         cursor: pointer;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
         z-index: 1021;
     }
@@ -199,14 +201,14 @@ ul.list-unstyled li a, a:hover, a:focus, a:active {
         background: var(--secondary-bg-color);
         color: var(--primary-text-color);
         cursor: pointer;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
         z-index: 1021;
     }
     h2 {
         position: static;
         left: 38%;
-        height: 196px;
+        height: 207px;
         padding-top: 0px;
         overflow: hidden;
         font-size: 16em;
@@ -234,10 +236,10 @@ ul.list-unstyled li a, a:hover, a:focus, a:active {
         text-align: center;
     }
     .ayrac {
-        border-right: 1px solid #21252940;
+        border-right: 1px solid var(--secondary-text-color);
     }
     .cizgi {
-        top: 56px!important;
-        z-index: 1;
+        top: 55px!important;
+        z-index: 9999;
     }
 }
