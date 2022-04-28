@@ -1,6 +1,31 @@
 let themeToggler = document.getElementById('theme-toggler');
 let navbar = document.getElementById('navbar');
+
+function makeEaseInOut(timing) {
+    return function(timeFraction) {
+        if (timeFraction <= .5)
+            return timing(2 * timeFraction) / 2;
+        else
+            return -(2 - timing(2 * (0 - timeFraction)))+0.20;
+    }
+}
+
+function bounce(timeFraction) {
+    return -Math.sin(Math.PI / 2) * timeFraction;
+}
+
+let bounceEaseInOut = makeEaseInOut(bounce);
+
 themeToggler.onclick = () => {
+    //animation
+    animate({
+        duration: 250,
+        timing: bounceEaseInOut,
+        draw: function(progress) {
+          themeToggler.style.top = progress * 50 + 'px';
+        }
+    });
+
     themeToggler.classList.toggle('fa-sun');
     navbar.classList.toggle('navbar-dark');
     if (themeToggler.classList.contains('fa-sun')) {
@@ -32,6 +57,7 @@ if (localStorage.getItem('dark-mode') == 'dark') {
     // if the above is 'dark' then apply .dark to the body
     document.body.classList.add('active'); 
     themeToggler.classList.toggle('fa-sun');
+    themeToggler.animate(themeToggler.darkAnim);
     navbar.classList.toggle('navbar-dark');
 }
 else {

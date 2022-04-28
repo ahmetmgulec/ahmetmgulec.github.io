@@ -8,6 +8,8 @@
     --secondary-bg-color: #fff;
     --primary-text-color: #666;
     --secondary-text-color: #999;
+    --primary-shadow-color: rgba(0,0,0,0.25);
+    --secondary-shadow-color: rgba(255,255,255,0.25);
 }
 
 body.active {
@@ -15,20 +17,25 @@ body.active {
     --secondary-bg-color: #333;
     --primary-text-color: #fff;
     --secondary-text-color: #eee;
+    --primary-shadow-color: rgba(255,255,255,0.25);
+    --secondary-shadow-color: rgba(0,0,0,0.25);
+    background-color: #101010;
 }
 
 #theme-toggler {
     position: fixed;
-    top: 5px;
-    right: 40px;
-    padding: 10px 15px;
-    font-size: 15px;
-    background: var(--secondary-bg-color);
+    padding: 10px;
+    font-size: 1em;
+    background: var(--primary-bg-color);
     color: var(--primary-text-color);
     cursor: pointer;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-    z-index: 1021;
+    box-shadow:
+    -7px -7px 20px 0px var(--secondary-shadow-color),
+    -4px -4px 5px 0px var(--secondary-shadow-color),
+    7px 7px 20px 0px var(--primary-shadow-color),
+    4px 4px 5px 0px var(--primary-shadow-color);
+    border-radius: 10px;
+    z-index: 9999;
 }
 
 html {
@@ -52,16 +59,6 @@ body{
 .content-top{
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
-}
-h2 {
-    position: static;
-    left: 38%;
-    height: 76px;
-    padding-top: 0px;
-    overflow: hidden;
-    font-size: 6em;
-    margin-top: -30px;
-    color: rgb(241, 179, 150);
 }
 h3.Jumbo {
     position: static;
@@ -117,16 +114,6 @@ ul.list-unstyled li a, a:hover, a:focus, a:active {
     scroll-snap-align: none; /* for snapping, do "start" */
 }
 @media  screen and (min-width:572px) {
-    h2 {
-        position: static;
-        left: 38%;
-        height: 117px;
-        padding-top: 0px;
-        overflow: hidden;
-        font-size: 9em;
-        margin-top: -40px;
-        color: rgb(241, 179, 150);
-    } 
     h3.Jumbo {
         position: static;
         left: 38%;
@@ -137,31 +124,8 @@ ul.list-unstyled li a, a:hover, a:focus, a:active {
         margin-top: -15px;
         color: rgb(241, 179, 150);
     }
-    #theme-toggler {
-        position: fixed;
-        top: 5px;
-        right: 40px;
-        padding: 10px 15px;
-        font-size: 15px;
-        background: var(--secondary-bg-color);
-        color: var(--primary-text-color);
-        cursor: pointer;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
-        border-radius: 5px;
-        z-index: 1021;
-    }
 }
 @media  screen and (min-width:768px) {
-    h2 {
-        position: static;
-        left: 38%;
-        height: 157px;
-        padding-top: 0px;
-        overflow: hidden;
-        font-size: 12em;
-        margin-top: -40px;
-        color: rgb(241, 179, 150);
-    } 
     h3.Jumbo {
         position: static;
         left: 38%;
@@ -172,48 +136,12 @@ ul.list-unstyled li a, a:hover, a:focus, a:active {
         margin-top: -15px;
         color: rgb(241, 179, 150);
     }
-    #theme-toggler {
-        position: fixed;
-        top: 5px;
-        right: 10px;
-        padding: 12px 18px;
-        font-size: 20px;
-        background: var(--secondary-bg-color);
-        color: var(--primary-text-color);
-        cursor: pointer;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
-        border-radius: 5px;
-        z-index: 1021;
-    }
 }
 @media  screen and (min-width:992px) {
     html {
         scroll-behavior: smooth;
         scroll-padding-top: 72px; /* height of sticky header */
         scroll-snap-type: y mandatory;
-    }
-    #theme-toggler {
-        position: fixed;
-        top: 5px;
-        right: 10px;
-        padding: 12px 18px;
-        font-size: 20px;
-        background: var(--secondary-bg-color);
-        color: var(--primary-text-color);
-        cursor: pointer;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
-        border-radius: 5px;
-        z-index: 1021;
-    }
-    h2 {
-        position: static;
-        left: 38%;
-        height: 207px;
-        padding-top: 0px;
-        overflow: hidden;
-        font-size: 16em;
-        margin-top: -50px;
-        color: rgb(241, 179, 150);
     }
     h3.Jumbo {
         position: static;
