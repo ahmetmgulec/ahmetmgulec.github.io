@@ -15,14 +15,31 @@ function bounce(timeFraction) {
 }
 
 let bounceEaseInOut = makeEaseInOut(bounce);
+let vHeight;
+
+window.onresize = () => {
+    if(visualViewport.width<=992){
+        themeToggler.style.top = '42px';
+    }
+    else{
+        themeToggler.style.top = '10px';
+    }
+}
 
 themeToggler.onclick = () => {
+    
+    if(visualViewport.width<=992){
+        vHeight=200;
+    }
+    else{
+        vHeight=50;
+    }
     //animation
     animate({
         duration: 250,
         timing: bounceEaseInOut,
         draw: function(progress) {
-          themeToggler.style.top = progress * 50 + 'px';
+          themeToggler.style.top = progress * vHeight + 'px';
         }
     });
 

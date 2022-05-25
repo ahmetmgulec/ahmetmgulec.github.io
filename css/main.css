@@ -24,6 +24,7 @@ body.active {
 
 #theme-toggler {
     position: fixed;
+    top: 42px;
     padding: 10px;
     font-size: 1em;
     background: var(--primary-bg-color);
@@ -106,7 +107,7 @@ ul.list-unstyled li a, a:hover, a:focus, a:active {
     text-align: end;
 }
 .cizgi {
-    top: 95px!important;
+    top: 93px!important;
     z-index: 9999;
     background-color: var(--secondary-text-color);
 }
@@ -169,5 +170,8 @@ ul.list-unstyled li a, a:hover, a:focus, a:active {
     .cizgi {
         top: 55px!important;
         z-index: 9999;
+    }
+    #theme-toggler{
+        top: 10px;
     }
 }
