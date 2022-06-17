@@ -22,6 +22,11 @@ body.active {
     background-color: #101010;
 }
 
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
 #theme-toggler {
     position: fixed;
     top: 42px;
@@ -61,6 +66,11 @@ body{
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
 }
+div.ayrac hr {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
 h3.Jumbo {
     position: static;
     left: 38%;
@@ -110,6 +120,8 @@ ul.list-unstyled li a, a:hover, a:focus, a:active {
     top: 93px!important;
     z-index: 9999;
     background-color: var(--secondary-text-color);
+    margin-left: 32px!important;
+    margin-right: 32px!important;
 }
 .yazi {
     scroll-snap-align: none; /* for snapping, do "start" */
