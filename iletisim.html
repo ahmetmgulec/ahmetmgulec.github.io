@@ -81,24 +81,32 @@
                 <h4 class="mt-3" id="my-form-status"></h4>
             </div>
             <div class="container-fluid mt-4 px-3">
-                <form id="my-form" class="w-50 pe-md-5" action="https://formspree.io/f/xjvznzbp" method="POST">
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="InputName1" name="Name" aria-describedby="nameHelp" placeholder="your name">
-                        <label for="InputName1">Adınız</label>
+                <div class="row pt-3">
+                    <div class="col-6">
+                        <h4>Merhaba</h4>
+                        <p>Benimle iletişime geçmek için yan tarafta bulunan formu doldurup gönder butonuna basmanız yeterli.</p>
+                        <p>Görüş ve önerileriniz benim için çok önemlidir.</p>
                     </div>
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="InputEmail1" name="Email"
-                            aria-describedby="emailHelp" placeholder="name@example.com">
-                        <label for="InputEmail1">Email adresiniz</label>
-                        <div id="emailHelp" class="form-text">E-Postanızı kimseyle paylaşmayacağım.</div>
+                    <div class="col-6">
+                        <form id="my-form" class="pe-md-5" action="https://formspree.io/f/xjvznzbp" method="POST">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="InputName1" name="Name" aria-describedby="nameHelp" placeholder="your name">
+                                <label for="InputName1">Adınız</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="InputEmail1" name="Email"
+                                    aria-describedby="emailHelp" placeholder="name@example.com">
+                                <label for="InputEmail1">Email adresiniz</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" name="Message" placeholder="Mesajınız buraya yazabilirsiniz."
+                                    id="floatingTextarea2" style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">Mesajınız</label>
+                            </div>
+                            <button class="btn btn-outline-secondary" id="my-form-button">Gönder</button>
+                        </form>
                     </div>
-                    <div class="form-floating mb-3">
-                        <textarea class="form-control" name="Message" placeholder="Mesajınız buraya yazabilirsiniz."
-                            id="floatingTextarea2" style="height: 100px"></textarea>
-                        <label for="floatingTextarea2">Mesajınız</label>
-                    </div>
-                    <button class="btn btn-primary" id="my-form-button">Gönder</button>
-                </form>
+                </div>
             </div>
         </div>
         <footer class="bd-footer py-5 mt-5 bg-dark px-3 yazi">
