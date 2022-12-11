@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
         // Render blocking JS:
-        if (localStorage.getItem('dark-mode')=='dark') document.documentElement.setAttribute("data-theme", localStorage.getItem('dark-mode'));
+        if (localStorage.getItem('dark-mode') == 'dark') document.documentElement.setAttribute("data-theme", localStorage.getItem('dark-mode'));
     </script>
     <script src="/scripts/animate.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/main.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Ahmetmgulec</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>İletişim</title>
     <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
@@ -30,14 +31,15 @@
     <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="#000000">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
 </head>
+
 <body class="scrollspy-example" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="75" tabindex="0">
     <div class="container-md px-0 content yazi">
         <div class="container-md-fluid px-3 sticky-top content-top">
@@ -48,7 +50,7 @@
                 <div class="col col-12 col-lg-5 navbar-nav d-block px-2 px-lg-0 pe-lg-3">
                     <div class="row mx-0 justify-content-between p-1 px-2 p-lg-0">
                         <div class="col-3 px-0 ilk">
-                            <a class="nav-link active" href="index.html">Ana Sayfa</a>
+                            <a class="nav-link" href="index.html">Anasayfa</a>
                         </div>
                         <div class="col-2 px-0 text-center">
                             <a class="nav-link" aria-current="page" href="yazilar.html">Yazılar</a>
@@ -57,54 +59,59 @@
                             <a class="nav-link" href="#">Projeler</a>
                         </div>
                         <div class="col-2 px-0 text-center">
-                            <a class="nav-link" href="iletisim.html" tabindex="">İletişim</a>
+                            <a class="nav-link active" href="iletisim.html" tabindex="">İletişim</a>
                         </div>
                         <div class="col-2 son px-0 text-center">
                             <button id="theme-toggler" class="btn fas fa-moon"></button>
                         </div>
                     </div>
                 </div>
-            </nav> 
+            </nav>
         </div>
         <div class="container-fluid px-3">
             <h3 class="px-3 mb-0 Jumbo text-center">
-                Ana Sayfa
+                İletişim
             </h3>
         </div>
-        <div class="position-sticky cizgi">
+        <div class="position-sticky mx-4 cizgi">
             <hr class="mx-4 my-0 py-0">
         </div>
         <div class="container-md pb-4 px-3">
-            <div class="container-fluid px-3 mt-5">
-                <div class="row content px-3">
-                    <h1 class="text-center pt-5 px-5">"Hayat, sen planlar yaparken başına gelenlerdir."</h1>
-                    <cite class="text-end pb-5 px-5">John Lennon</cite>
-                </div>
-                <div class="position-sticky" style="background-color: var(--secondary-text-color);">
-                    <hr class="my-0 py-0">
-                </div>
-                <div class="row content mt-5 py-3">
-                    <h2 class="px-0">Ben kimim?</h2>
-                    <p class="px-0">
-                        Herkesin elinden geldiği kadar yapması gereken eylemi gerçekleştiren kişi, yazar. <br>
-                        Herkesin elinde olmadan da yaptığı eylemi gerçekleştiren kişi, sever. <br>
-                        Herkes kadar derdi olan ama sevdiğinin derdiyle de dertlenen kişi, insan. <br>
-                        Edebiyat bir yana, herkes gibi geçinmek için çalışan fakat bir o kadar da herkesten farklı biriyim. <br>
-                        Zaten herkes biraz da olsa herkesten farklı değil midir? <br>
-                        Adım Ahmet Miray anlayacağınız üzere, doğum '98, ölüm Allah'ın emri. <br>
-                    </p>
-                    <p class="px-0">Gerisi tanışınca...</p>
-                </div>
+            <div class="text-center">
+                <h4 class="mt-3" id="my-form-status"></h4>
+            </div>
+            <div class="container-fluid mt-4 px-3">
+                <form id="my-form" class="w-50 pe-md-5" action="https://formspree.io/f/xjvznzbp" method="POST">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="InputName1" name="Name" aria-describedby="nameHelp" placeholder="your name">
+                        <label for="InputName1">Adınız</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="InputEmail1" name="Email"
+                            aria-describedby="emailHelp" placeholder="name@example.com">
+                        <label for="InputEmail1">Email adresiniz</label>
+                        <div id="emailHelp" class="form-text">E-Postanızı kimseyle paylaşmayacağım.</div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" name="Message" placeholder="Mesajınız buraya yazabilirsiniz."
+                            id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Mesajınız</label>
+                    </div>
+                    <button class="btn btn-primary" id="my-form-button">Gönder</button>
+                </form>
             </div>
         </div>
         <footer class="bd-footer py-5 mt-5 bg-dark px-3 yazi">
-            <div class="row py-4">
+            <div class="row p-4">
                 <div class="col-lg-3 mb-3">
-                    <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Ahmetmgulec">
-                    <h4 class="text-light">Ahmet M. Güleç</h4>
+                    <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/"
+                        aria-label="Ahmetmgulec">
+                        <h4 class="text-light">Ahmet M. Güleç</h4>
                     </a>
                     <ul class="list-unstyled small text-muted">
-                        <li class="mb-2">Designed and built with all the love in the world by the <a href="/docs/5.0/about/team/">Bootstrap team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</li>
+                        <li class="mb-2">Designed and built with all the love in the world by the <a
+                                href="/docs/5.0/about/team/">Bootstrap team</a> with the help of <a
+                                href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</li>
                         <li class="mb-2">Coded by Ahmetmgulec</li>
                         <li class="mb-2">Currently v1.0.0.</li>
                     </ul>
@@ -146,12 +153,46 @@
                         <li class="mb-2"><a href="https://github.com/sponsors/twbs">Corporate sponsors</a></li>
                         <li class="mb-2"><a href="https://opencollective.com/bootstrap">Open Collective</a></li>
                         <li class="mb-2"><a href="https://bootstrap-slack.herokuapp.com/">Slack</a></li>
-                        <li class="mb-2"><a href="https://stackoverflow.com/questions/tagged/bootstrap-5">Stack Overflow</a></li>
+                        <li class="mb-2"><a href="https://stackoverflow.com/questions/tagged/bootstrap-5">Stack
+                                Overflow</a></li>
                     </ul>
                 </div>
             </div>
         </footer>
     </div>
     <script src="/scripts/darkmode.js"></script>
+    <script>
+        var form = document.getElementById("my-form");
+
+        async function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById("my-form-status");
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    status.innerHTML = "Mesajınız iletilmiştir!";
+                    form.reset()
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                        } else {
+                            status.innerHTML = "Hay aksi! Mesajınızı iletirken bir sorun oluştu."
+                        }
+                    })
+                }
+            }).catch(error => {
+                status.innerHTML = "Hay aksi! Mesajınızı iletirken bir sorun oluştu."
+            });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script>
 </body>
+
 </html>
