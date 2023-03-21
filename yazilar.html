@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
         // Render blocking JS:
-        if (localStorage.getItem('dark-mode')=='dark') document.documentElement.setAttribute("data-theme", localStorage.getItem('dark-mode'));
+        if (localStorage.getItem('dark-mode') == 'dark') document.documentElement.setAttribute("data-theme", localStorage.getItem('dark-mode'));
     </script>
     <script src="/scripts/animate.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/main.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Yazılar</title>
     <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
@@ -30,14 +31,15 @@
     <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="#000000">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
 </head>
+
 <body class="scrollspy-example" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="75" tabindex="0">
     <div class="container-md px-0 content yazi shadow">
         <div class="container-md-fluid px-3 sticky-top content-top">
@@ -64,7 +66,7 @@
                         </div>
                     </div>
                 </div>
-            </nav> 
+            </nav>
         </div>
         <div class="container-fluid px-3">
             <h3 class="px-3 mb-0 Jumbo text-center">
@@ -78,6 +80,33 @@
             <div class="container-fluid px-0 mt-5">
                 <div class="row g-4 px-1">
                     <div class="col col-12 col-lg-7 px-0 ayrac">
+                        <div class="row mb-5 yazi" id="list-item-1">
+                            <h3 class="mb-3">Bin Başlı Boğa</h3>
+                            <p>
+                                Herkes gökyüzünü seyrederken,<br>
+                                İnsanlar hakkında düşündüm.<br>
+                                Zaman su gibi akıp giderken,<br>
+                                Karanlık boşlukta süzüldüm.<br>
+                                <br>
+                                Bir savaşın ortasında adeta,<br>
+                                Sağır eden bir rüzgar duydum.<br>
+                                Bulutlar saçıldı etrafa,<br>
+                                Ben sadece kızgın bir boğa gördüm.<br>
+                                <br>
+                                Kan kırmızı kapladı düşleri,<br>
+                                Sıkışıp kaldığım çıkmaz sokakları.<br>
+                                Olduğumuz yere sapladı bizleri,<br>
+                                Feleği şaşmış korkakları.<br>
+                                <br>
+                                Bir ses çıkageldi uzaklardan,<br>
+                                Bilge ve vadi inleten bir hiddet.<br>
+                                "Eğer yaşamak istiyorsan hür,<br>
+                                Şu soruma cevap ver aciz kul:<br>
+                                BEN KİMİM?" <br>
+                            </p>
+                            <small>21 Mart 2023 Salı</small>
+                        </div>
+                        <hr>
                         <div class="row mb-5 yazi" id="list-item-1">
                             <h3 class="mb-3">Amor Vincit Omnia</h3>
                             <p>
@@ -158,7 +187,7 @@
                         </div>
                         <hr>
                         <div class="row my-5 yazi" id="list-item-4">
-                            <h3 class="mb-3" >Pencere</h3>
+                            <h3 class="mb-3">Pencere</h3>
                             <p>
                                 Bakamadığım her manzara sen olsan,<br>
                                 Uçamadığım bu gökyüzü,<br>
@@ -172,7 +201,7 @@
                         </div>
                         <hr>
                         <div class="row my-5 yazi" id="list-item-5">
-                            <h3 class="mb-3" >What could it be?</h3>
+                            <h3 class="mb-3">What could it be?</h3>
                             <p>
                                 If it was a dream of two...<br>
                                 I would always be by yourside,<br>
@@ -210,7 +239,7 @@
                                 <br>
                                 Çözemezsin - Dedublüman<br>
                                 <br>
-                                <p>Bunlar bana bir şeyler hissettiren bazı şarkılar.</p>
+                            <p>Bunlar bana bir şeyler hissettiren bazı şarkılar.</p>
                             </p>
                             <small>23 Kasım 2021 Salı</small>
                         </div>
@@ -244,26 +273,33 @@
                         <div class="row my-5 yazi" id="list-item-8">
                             <h3 class="mb-3">Kafes</h3>
                             <p>
-                                Her şey yaşanmış bitmiş, orada takılı kalmadım da bendeki izi çok ağırıma gidiyor. 
-                                Artık başka birini sevemiyecekmişim yada tekrar o hisleri yaşayamayacakmışım gibi geliyor. 
-                                Artık farklı düşünmeye başladım, kendimin dahi çözemediği bir düşünce şekli. 
-                                Yalnız kalmaktan o kadar sıkıldım ki biriyle olmanın verdiği mutluluk, uyuşturucu gibi şuan. 
-                                Alsam bu uyuşturucuyu mutlu hissedeceğim fakat gün geçtikçe daha da çok canım yanacak, 
-                                daha çok alışacağım, daha çok seveceğim, her şey daha güzel olacak ama ben kendimden vereceğim. 
-                                Sevmek bu değildi bana göre, hiç karşılık beklemeden ama hiç zarar da görmeden mutlu olmak ve mutlu etmekti. 
-                                Artık sadece melankolik duygular var kalbimde. 
-                                Kimsenin ulaşmasını istemediğim için kafese koyduğum bir kalp ama camdan olan bu kafesimi kırsınlar diye elimde sokak sokak gezdirdiğim bir kalp. 
-                                Neden sadece sevemiyorum? 
-                                Neden korkmadan biriyle bir şeyler yaşayamıyorum? Neden? Sadece… bilmiyorum. 
-                                Her şey o kadar yoğun ki aklımı nasıl toparlayacağımı dahi bilmiyorum. 
-                                Sadece birini bekliyorum, gördüğüm zaman bu “O” diyebileceğim, beni bu camdan kafesten kurtaracak, 
-                                beni sevecek ama tekrar o kafese koymayacak birini. 
-                                Çok mu zor hayattan istediklerimizi elde etmek? 
-                                Birisi çıkıp “Ben O’yum!” diyemiyor mu? 
-                                Ben hayal dünyasında mı yaşıyorum yoksa? 
-                                Öyleyse bile çok üzücü değil mi gerçek hayatta böyle insanların olamayacağını bilmek? 
-                                Her zaman çok soru sorduğumu düşünürüm fakat şunu fark ettim ki ne zaman bir konu hakkında köşeye sıkışsam hemen sorulara yöneliyorum. 
-                                Beni başka yönlere iten bir kaçış mekanizması bu. 
+                                Her şey yaşanmış bitmiş, orada takılı kalmadım da bendeki izi çok ağırıma gidiyor.
+                                Artık başka birini sevemiyecekmişim yada tekrar o hisleri yaşayamayacakmışım gibi
+                                geliyor.
+                                Artık farklı düşünmeye başladım, kendimin dahi çözemediği bir düşünce şekli.
+                                Yalnız kalmaktan o kadar sıkıldım ki biriyle olmanın verdiği mutluluk, uyuşturucu gibi
+                                şuan.
+                                Alsam bu uyuşturucuyu mutlu hissedeceğim fakat gün geçtikçe daha da çok canım yanacak,
+                                daha çok alışacağım, daha çok seveceğim, her şey daha güzel olacak ama ben kendimden
+                                vereceğim.
+                                Sevmek bu değildi bana göre, hiç karşılık beklemeden ama hiç zarar da görmeden mutlu
+                                olmak ve mutlu etmekti.
+                                Artık sadece melankolik duygular var kalbimde.
+                                Kimsenin ulaşmasını istemediğim için kafese koyduğum bir kalp ama camdan olan bu
+                                kafesimi kırsınlar diye elimde sokak sokak gezdirdiğim bir kalp.
+                                Neden sadece sevemiyorum?
+                                Neden korkmadan biriyle bir şeyler yaşayamıyorum? Neden? Sadece… bilmiyorum.
+                                Her şey o kadar yoğun ki aklımı nasıl toparlayacağımı dahi bilmiyorum.
+                                Sadece birini bekliyorum, gördüğüm zaman bu “O” diyebileceğim, beni bu camdan kafesten
+                                kurtaracak,
+                                beni sevecek ama tekrar o kafese koymayacak birini.
+                                Çok mu zor hayattan istediklerimizi elde etmek?
+                                Birisi çıkıp “Ben O’yum!” diyemiyor mu?
+                                Ben hayal dünyasında mı yaşıyorum yoksa?
+                                Öyleyse bile çok üzücü değil mi gerçek hayatta böyle insanların olamayacağını bilmek?
+                                Her zaman çok soru sorduğumu düşünürüm fakat şunu fark ettim ki ne zaman bir konu
+                                hakkında köşeye sıkışsam hemen sorulara yöneliyorum.
+                                Beni başka yönlere iten bir kaçış mekanizması bu.
                                 Ama ne kadar soru sorarsam sorayım bu cam kafesten kaçamayacağım.
                             </p>
                             <small>18 Ekim 2019 Cuma</small>
@@ -306,72 +342,72 @@
                             <!--<h4 class="list-group-item pt-0 px-0">Tarihçe</h4>-->
                             <a href="#list-item-1" class="list-group-item list-group-item-action p-2">
                                 <div class="d-flex w-100 justify-content-between">
-                                  <h5 class="mb-1">Amor Vincit Omnia</h5>
-                                  <small class="text-muted">21 Şubat 2023</small>
+                                    <h5 class="mb-1">Amor Vincit Omnia</h5>
+                                    <small class="text-muted">21 Şubat 2023</small>
                                 </div>
                                 <p class="mb-1">Şiir</p>
                                 <small class="text-muted">Ahmetmgulec</small>
                             </a>
                             <a href="#list-item-2" class="list-group-item list-group-item-action p-2">
                                 <div class="d-flex w-100 justify-content-between">
-                                  <h5 class="mb-1">Seni Özlerim</h5>
-                                  <small class="text-muted">18 Ekim 2022</small>
+                                    <h5 class="mb-1">Seni Özlerim</h5>
+                                    <small class="text-muted">18 Ekim 2022</small>
                                 </div>
                                 <p class="mb-1">Şiir</p>
                                 <small class="text-muted">Ahmetmgulec</small>
                             </a>
                             <a href="#list-item-3" class="list-group-item list-group-item-action p-2">
                                 <div class="d-flex w-100 justify-content-between">
-                                  <h5 class="mb-1">Yaşamak</h5>
-                                  <small class="text-muted">20 Mayıs 2022</small>
+                                    <h5 class="mb-1">Yaşamak</h5>
+                                    <small class="text-muted">20 Mayıs 2022</small>
                                 </div>
                                 <p class="mb-1">Şiir</p>
                                 <small class="text-muted">Ahmetmgulec</small>
                             </a>
                             <a href="#list-item-4" class="list-group-item list-group-item-action p-2">
                                 <div class="d-flex w-100 justify-content-between">
-                                  <h5 class="mb-1">Pencere</h5>
-                                  <small class="text-muted">24 Ocak 2022</small>
+                                    <h5 class="mb-1">Pencere</h5>
+                                    <small class="text-muted">24 Ocak 2022</small>
                                 </div>
                                 <p class="mb-1">Şiir</p>
                                 <small class="text-muted">Ahmetmgulec</small>
                             </a>
                             <a href="#list-item-5" class="list-group-item list-group-item-action p-2">
-                              <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">What could it be?</h5>
-                                <small class="text-muted">7 Aralık 2021</small>
-                              </div>
-                              <p class="mb-1">İngilizce şiir</p>
-                              <small class="text-muted">Ahmetmgulec</small>
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">What could it be?</h5>
+                                    <small class="text-muted">7 Aralık 2021</small>
+                                </div>
+                                <p class="mb-1">İngilizce şiir</p>
+                                <small class="text-muted">Ahmetmgulec</small>
                             </a>
                             <a href="#list-item-6" class="list-group-item list-group-item-action p-2">
-                              <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Bazı şarkılar</h5>
-                                <small class="text-muted">23 Kasım 2021</small>
-                              </div>
-                              <p class="mb-1">Şarkı önerileri</p>
-                              <small class="text-muted">Ahmetmgulec</small>
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Bazı şarkılar</h5>
+                                    <small class="text-muted">23 Kasım 2021</small>
+                                </div>
+                                <p class="mb-1">Şarkı önerileri</p>
+                                <small class="text-muted">Ahmetmgulec</small>
                             </a>
                             <a href="#list-item-7" class="list-group-item list-group-item-action p-2">
                                 <div class="d-flex w-100 justify-content-between">
-                                  <h5 class="mb-1">Karamel Makiyato</h5>
-                                  <small class="text-muted">16 Mayıs 2020</small>
+                                    <h5 class="mb-1">Karamel Makiyato</h5>
+                                    <small class="text-muted">16 Mayıs 2020</small>
                                 </div>
                                 <p class="mb-1">Şiir</p>
                                 <small class="text-muted">Ahmetmgulec</small>
                             </a>
                             <a href="#list-item-8" class="list-group-item list-group-item-action p-2">
                                 <div class="d-flex w-100 justify-content-between">
-                                  <h5 class="mb-1">Kafes</h5>
-                                  <small class="text-muted">18 Ekim 2019</small>
+                                    <h5 class="mb-1">Kafes</h5>
+                                    <small class="text-muted">18 Ekim 2019</small>
                                 </div>
                                 <p class="mb-1">Yazı</p>
                                 <small class="text-muted">Ahmetmgulec</small>
                             </a>
                             <a href="#list-item-9" class="list-group-item list-group-item-action p-2">
                                 <div class="d-flex w-100 justify-content-between">
-                                  <h5 class="mb-1">Yazmak</h5>
-                                  <small class="text-muted">12 Ocak 2019</small>
+                                    <h5 class="mb-1">Yazmak</h5>
+                                    <small class="text-muted">12 Ocak 2019</small>
                                 </div>
                                 <p class="mb-1">Şiir</p>
                                 <small class="text-muted">Ahmetmgulec</small>
@@ -384,11 +420,14 @@
         <footer class="bd-footer py-5 mt-5 bg-dark px-3 yazi">
             <div class="row p-4">
                 <div class="col-lg-3 mb-3">
-                    <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Ahmetmgulec">
-                    <h4 class="text-light">Ahmet M. Güleç</h4>
+                    <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/"
+                        aria-label="Ahmetmgulec">
+                        <h4 class="text-light">Ahmet M. Güleç</h4>
                     </a>
                     <ul class="list-unstyled small text-muted">
-                        <li class="mb-2">Designed and built with all the love in the world by the <a href="/docs/5.0/about/team/">Bootstrap team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</li>
+                        <li class="mb-2">Designed and built with all the love in the world by the <a
+                                href="/docs/5.0/about/team/">Bootstrap team</a> with the help of <a
+                                href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</li>
                         <li class="mb-2">Coded by Ahmetmgulec</li>
                         <li class="mb-2">Currently v1.0.0.</li>
                     </ul>
@@ -430,7 +469,8 @@
                         <li class="mb-2"><a href="https://github.com/sponsors/twbs">Corporate sponsors</a></li>
                         <li class="mb-2"><a href="https://opencollective.com/bootstrap">Open Collective</a></li>
                         <li class="mb-2"><a href="https://bootstrap-slack.herokuapp.com/">Slack</a></li>
-                        <li class="mb-2"><a href="https://stackoverflow.com/questions/tagged/bootstrap-5">Stack Overflow</a></li>
+                        <li class="mb-2"><a href="https://stackoverflow.com/questions/tagged/bootstrap-5">Stack
+                                Overflow</a></li>
                     </ul>
                 </div>
             </div>
@@ -438,4 +478,5 @@
     </div>
     <script src="/scripts/darkmode.js"></script>
 </body>
+
 </html>
