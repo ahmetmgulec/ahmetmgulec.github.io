@@ -74,10 +74,10 @@ div.ayrac hr {
 h3.Jumbo {
     position: static;
     left: 38%;
-    height: 60px;
+    height: 44px;
     padding-top: 0px;
     overflow: hidden;
-    font-size: 4em;
+    font-size: 3em;
     margin-top: -10px;
     color: rgb(241, 179, 150);
 }
@@ -126,7 +126,17 @@ ul.list-unstyled li a, a:hover, a:focus, a:active {
 .yazi {
     scroll-snap-align: none; /* for snapping, do "start" */
 }
-@media  screen and (min-width:572px) {
+a.nav-link{
+    font-size: 0.85em!important;
+}
+a.nav-link.active{
+    border-bottom: 1px solid var(--primary-text-color);
+}
+a{
+    color: var(--primary-text-color);
+    text-decoration-color: var(--primary-text-color);
+}
+@media screen and (min-width:572px) {
     h3.Jumbo {
         position: static;
         left: 38%;
@@ -137,8 +147,11 @@ ul.list-unstyled li a, a:hover, a:focus, a:active {
         margin-top: -15px;
         color: rgb(241, 179, 150);
     }
+    a.nav-link{
+        font-size: 0.9em!important;
+    }
 }
-@media  screen and (min-width:768px) {
+@media screen and (min-width:768px) {
     h3.Jumbo {
         position: static;
         left: 38%;
@@ -150,7 +163,7 @@ ul.list-unstyled li a, a:hover, a:focus, a:active {
         color: rgb(241, 179, 150);
     }
 }
-@media  screen and (min-width:992px) {
+@media screen and (min-width:992px) {
     html {
         scroll-behavior: smooth;
         scroll-padding-top: 72px; /* height of sticky header */
@@ -185,5 +198,8 @@ ul.list-unstyled li a, a:hover, a:focus, a:active {
     }
     #theme-toggler{
         top: 10px;
+    }
+    a.nav-link{
+        font-size: 1.1em!important;
     }
 }
