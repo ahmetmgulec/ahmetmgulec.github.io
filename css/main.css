@@ -71,6 +71,14 @@ div.ayrac hr {
     margin-right: 12px;
 }
 
+.scroller {
+    top: 70px;
+    z-index: 1000;
+    overflow-y: scroll;
+    height: 94vh;
+    scrollbar-color: rgb(241, 179, 150) var(--primary-bg-color);
+}
+
 h3.Jumbo {
     position: static;
     left: 38%;
